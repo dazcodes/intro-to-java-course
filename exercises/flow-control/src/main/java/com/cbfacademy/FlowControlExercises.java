@@ -1,3 +1,8 @@
+//Thursday 20th June 2024 Session 9
+//result holds the values 
+//the values for i is held in numbers
+//list interface uses .size 
+//core java arrays have a .length method such as strings 
 package com.cbfacademy;
 
 import java.util.ArrayList;
@@ -7,15 +12,42 @@ import java.util.Map;
 public class FlowControlExercises {
 
     public List<String> fizzBuzz(List<Integer> numbers) {
+       
         // TODO - Implement this method such that
         //  it creates a list where for each element of the input list ${numbers}
+         List<String> result = new ArrayList<>();
+         for (int i = 0; i < numbers.size(); i++){
+          
+            /* if (numbers.get(i) % 3 == 0 && numbers.ger(i) % 5){
+             * results.add("FizzBuzz");
+            } else if (numbers.get(i) % 5 == 0){
+                result.add("Buzz"); 
+         }  if (numbers.get(i) % 3 ==0) {
+                result.add("Fizz"); */
+
         //  - if the ${element} is divisible by 3, it adds “Fizz” to the list
+         if (numbers.get(i) % 3 == 0 && numbers.get(i) % 5 == 0){
+                result.add("FizzBuzz");
+         }else if (numbers.get(i) % 3 == 0) {
+                result.add("Fizz");
+            }
         //  - if the ${element} is divisible by 5, it adds “Buzz” to the list
+          else if (numbers.get(i) % 5 == 0){
+                result.add("Buzz");
+            }  
         //  - if the ${element} is divisible by both 3 and 5, it adds “FizzBuzz” to the list
-        //  - it adds the element to the list in any other case
+            
+         //  - it adds the element to the list in any other case
+            else{
+                result.add(numbers.get(i).toString());
+         }
+        
         //  - it returns the constructed list
-        throw new RuntimeException("Not implemented");
+       
     }
+        return result;
+}
+
 
     public String whichMonth(Integer number) {
         // TODO - Implement this method such that
