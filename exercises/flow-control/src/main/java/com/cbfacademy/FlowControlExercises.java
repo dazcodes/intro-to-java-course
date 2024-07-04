@@ -8,6 +8,7 @@ package com.cbfacademy;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.HashMap;
 
 public class FlowControlExercises {
 
@@ -54,72 +55,71 @@ public class FlowControlExercises {
         //  - it returns the month corresponding to the input ${number}
         //  - if the ${number} is invalid, the method should return "Invalid month number"
         
-            
-            switch (month) {
+        
+            switch (number) {
 
                 case 1: 
-                System.out.print("January");
-                break;
+                return "January";
+            
 
                 case 2: 
-                System.out.print("February");
-                break;
+                return ("February");
+                
 
                 case 3: 
-                System.out.print("March");
-                break;
+                return "March";
+                
 
-                case 4:
-                System.out.print("April");
-                break;
+                case 4: 
+                return "April";
+                
 
                 case 5:
-                System.out.print("May");
-                break;
+                return "May";
+                
 
                 case 6: 
-                System.out.print("June");
-                break;
+                return "June";
+                
 
                 case 7:
-                System.out.print("July");
-                break;
+                return "July";
+                
 
                 case 8: 
-                System.out.print("August");
-                break;
+                return "August";
+                
 
                 case 9:
-                System.out.print("September");
-                break;
+                return "September";
+                
 
                 case 10:
-                System.out.print("October");
-                break;
+                return "October";
+                
 
                 case 11:
-                System.out.print("November");
-                break;
+                return "November";
+                
 
                 case 12:
-                System.out.print("December");
-                default:
-                System.out.println("Invalid month number");
-
-
-
+                return "December";
+            }
+        
+         return "Invalid month number";
             
         }
         
         
         
         // throw new RuntimeException("Not implemented");
-    }
+     
 
 
     public Map<String, Integer> sumOfOddsAndSumOfEvens() {
         // TODO - Implement this method such that
         //  - creates and initialises a list of 100 numbers - from 1 to 100
+        Map<String, Integer> sum = new HashMap <>();
         //  - determines the sum of all the even numbers in the list
         //  - determines the sum of all the odd numbers in the list
         //  - returns a map with two entries:
