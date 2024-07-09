@@ -117,6 +117,7 @@ public class FlowControlExercises {
 
 
     public Map<String, Integer> sumOfOddsAndSumOfEvens() {
+        
         // TODO - Implement this method such that
         //  - creates and initialises a list of 100 numbers - from 1 to 100
         Map<String, Integer> sum = new HashMap <>();
